@@ -1,0 +1,101 @@
+/* vim: set fs=css */
+
+html {
+  box-sizing: border-box;
+  text-rendering: optimizeLegibility;
+  font-family: sans-serif;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 100%;
+  line-height: 1.5em;
+  color: #24292e;
+  background-color: #fff;
+}
+
+main, header, nav { display: block; }
+header, footer { text-align: center; }
+
+main {
+  max-width: 80ch;
+  padding-bottom: 3em;
+  margin: auto;
+}
+
+main :first-child,
+main :first-child { margin-top: 0; }
+
+code, kbd, pre, samp {
+  font-family: monospace;
+  font-size: 1em;
+}
+
+a {
+  color: #0366d6;
+  text-decoration: none;
+}
+a:hover, a:focus, a:active {
+  text-decoration: underline;
+}
+
+h1, h2 { border-bottom: 1px solid #eaecef; }
+footer { border-top: 1px solid #eaecef; }
+
+h1, h2, h3, h4 {
+  margin-top: 1em;
+  margin-bottom: 0em;
+  font-weight: 600;
+  line-height: 1em;
+}
+
+h1 { font-size: 2em;    }
+h2 { font-size: 1.75em; }
+h3 { font-size: 1.5em;  }
+h4 { font-size: 1.25em; }
+
+h3:target a:before,
+h3 a:hover:before,
+h3 a:focus:before,
+h4:target a:before,
+h4 a:hover:before,
+h4 a:focus:before {
+  display: block;
+  content: '\25ba'; /* ► */
+  position: absolute;
+  margin-left: -1.25em;
+  color: #0366d6;
+  margin-top: -0.1em; /* HACK: Why does this fix alignment? */
+}
+
+p { margin-top: 1em; margin-bottom: 0; }
+
+ul { margin-top: 0.25em; }
+
+h1 + ul, h2 + ul, h3 + ul, h4 + ul {
+  margin-top: 1em;
+}
+
+header h1 { padding-bottom: 0.25em; }
+
+ul.inline {
+  list-style: none;
+  padding: 0;
+  margin-top: 1em;
+}
+ul.inline li {
+  display: inline-block;
+}
+ul.inline li:after {
+  content: '\2022';
+}
+ul.inline li:last-child:after {
+  content: '';
+}
+
+ul.inline li a {
+  padding: 1em;
+}

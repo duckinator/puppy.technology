@@ -1,0 +1,12 @@
+safe: true
+include: [_headers]
+exclude: [.gitignore, _bin, CNAME, LICENSE, Gemfile, Gemfile.lock]
+timezone: America/New_York
+name: "puppy technology"
+
+defaults:
+  -
+    scope:
+      path: "" # All files in the project.
+    values:
+      layout: "default"
